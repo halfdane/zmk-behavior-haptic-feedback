@@ -98,6 +98,7 @@ If you want to use the behavior in your keymap to make some keys rumble, update 
 };
 ```
 
+You can see it in action here: [BLE Braille Keyboard](https://github.com/halfdane/zmk-braille-config)
 
 ## Hardware
 
