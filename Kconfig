@@ -1,0 +1,12 @@
+# Haptic Feedback using a rumble motor
+#
+# Copyright (c) 2019 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+DT_COMPAT_ZMK_BEHAVIOR_HAPTIC_FEEDBACK := zmk,behavior-haptic-feedback
+
+config ZMK_BEHAVIOR_HAPTIC_FEEDBACK
+		bool
+		default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_HAPTIC_FEEDBACK))

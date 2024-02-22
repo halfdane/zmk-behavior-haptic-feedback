@@ -1,0 +1,8 @@
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Haptic feedback node
+
+compatible: "zmk,behavior-haptic-feedback"
+
+include: one_param.yaml
