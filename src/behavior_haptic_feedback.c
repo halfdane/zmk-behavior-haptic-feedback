@@ -14,7 +14,8 @@
 
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
-#if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
+// NOTE: checked in Kconfig & CMakeLists.txt
+// #if DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT)
 #define RUMBLE_NODE	DT_CHOSEN(DT_DRV_COMPAT)
 
 // struct behavior_rumble_config {
@@ -89,4 +90,4 @@ ZMK_LISTENER(ble_active_profile_change_status, ble_active_profile_change_listene
     ZMK_SUBSCRIPTION(ble_active_profile_change_status, zmk_ble_active_profile_changed);
 #endif
 
-#endif /* DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT) */
+// #endif /* DT_HAS_COMPAT_STATUS_OKAY(DT_DRV_COMPAT) */
