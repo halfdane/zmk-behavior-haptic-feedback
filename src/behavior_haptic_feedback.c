@@ -41,9 +41,9 @@ void _brr(const int count)
 
     for (int i = 0; i < count; i++) {
         LOG_DBG("  Rumble %d ", i);
-        gpio_pin_toggle_dt(&rmbl);
+        gpio_pin_set_dt(&rmbl, 0);
         k_msleep(250);
-        gpio_pin_toggle_dt(&rmbl);
+        gpio_pin_set_dt(&rmbl, 1);
         k_msleep(50);
     }
 }
