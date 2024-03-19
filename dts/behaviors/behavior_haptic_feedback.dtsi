@@ -1,6 +1,6 @@
 / {
     behaviors {
-        brr: haptic_feedback {
+        /omit-if-no-ref/ brr: haptic_feedback {
             compatible = "zmk,behavior-haptic-feedback";
             #binding-cells = <1>;
         };
