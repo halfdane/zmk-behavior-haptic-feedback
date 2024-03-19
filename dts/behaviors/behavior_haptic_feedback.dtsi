@@ -1,0 +1,8 @@
+/ {
+    behaviors {
+        brr: haptic_feedback {
+            compatible = "zmk,behavior-haptic-feedback";
+            #binding-cells = <1>;
+        };
+    };
+};
